@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gangothri">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YouTube Clone">
+    <title>YouTube Clone</title>
+
+    <link rel="icon" href="utube.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="left">
+            <h1 id="menu-btn">≡</h1>
+            <img class="image" src="utube.png" alt="YouTube Logo">
+            <h2>YouTube</h2>
+        </div>
+
+        <div class="middle">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+        </div>
+
+        <div class="right">
+            <button>🎤</button>
+            <button>Create</button>
+            <button>🔔</button>
+            <div class="profile">G</div>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="menu-item">🏠 Home</div>
+            <div class="menu-item">🎬 Shorts</div>
+
+            <hr>
+
+            <h3>Subscriptions</h3>
+
+            <div class="channel">Telugu Filmnagar</div>
+            <div class="channel">NPTEL IIT Kharagpur</div>
+            <div class="channel">CodeWithHarry</div>
+            <div class="channel">Volga Videos</div>
+            <div class="channel">TEDx Talks</div>
+
+            <div class="menu-item">▽ Show More</div>
+
+            <hr>
+
+            <h3>You</h3>
+
+            <div class="menu-item">👤 Your Channel</div>
+            <div class="menu-item">🕒 History</div>
+            <div class="menu-item">📋 Playlists</div>
+            <div class="menu-item">⏰ Watch Later</div>
+            <div class="menu-item">👍 Liked Videos</div>
+             
+            <hr>
+         <h3>More from YouTube</h3>
+
+       <div class="menu-item">▶️ Try Premium for $0</div>
+       <div class="menu-item">🎵 YouTube Music</div>
+       <div class="menu-item">👶 YouTube Kids</div>
+
+          <hr>
+
+       <h3>Explore</h3>
+
+        <div class="menu-item">🛍️ Shopping</div>
+        <div class="menu-item">🎵 Music</div>
+        <div class="menu-item">🎬 Movies</div>
+        <div class="menu-item">🔥 Trending</div>
+        <div class="menu-item">📺 Live</div>
+
+         <div class="menu-item">▽ Show More</div>  
+         <hr>
+
+         <div class="menu-item">🚩 Report History</div>
+
+         <hr>
+
+          <div class="footer-links">
+          <p>About Press Copyright</p>
+          <p>Contact us Creators Advertise</p>
+        <p>Developers</p>
+        <p>Test new features</p>
+    <br>
+
+    <p>Terms Privacy Policy & Safety</p>
+    <p>How YouTube works</p>
+</div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- Category Bar -->
+            <div class="categories">
+                <button>All</button>
+                <button>Music</button>
+                <button>Telugu Cinema</button>
+                <button>Live</button>
+                <button>Programming</button>
+                <button>Natural Star</button>
+                <button>Watched</button>
+                <button>Unwatched</button>
+                <button>Recently uploaded</button>
+                <button>Mixes</button>
+                <button>New to you</button>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="video-grid">
+
+                <div class="card">
+                    <img src="css.png" alt="CSS Tutorial">
+                    <h3>CSS Tutorial</h3>
+                    <p>freeCodeCamp</p>
+                    <p>3.4M views • 6 years ago</p>
+                </div>
+
+                <div class="card">
+                    <img src="html.png" alt="HTML Tutorial">
+                    <h3>HTML Tutorial</h3>
+                    <p>CodeWithHarry</p>
+                    <p>1M views • 2 years ago</p>
+                </div>
+
+                <div class="card">
+                    <img src="mahesh.png" alt="Mahesh Babu Movie">
+                    <h3>Super Star Mahesh Babu Latest Varanasi Full Length Movie</h3>
+                    <p>Telugu Talkies</p>
+                    <p>11M views • 2 months ago</p>
+                </div>
+
+                <div class="card">
+                    <img src="nani.png" alt="The Paradise Movie">
+                    <h3>Natural Star Nani Latest The Paradise Full Length Movie</h3>
+                    <p>Telugu Talkies</p>
+                    <p>20M views • 5 months ago</p>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const sidebar = document.getElementById("sidebar");
+
+        menuBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("hide");
+        });
+    </script>
+
+</body>
+
+</html>
+
